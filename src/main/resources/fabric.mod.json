@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "backstage_bluemap",
+	"version": "${version}",
+	"name": "Backstage Bluemap",
+	"description": "Starts and stops bluemap-renderer to only run with no players online.",
+	"authors": [
+		"sbamboo"
+	],
+	"contact": {
+		"homepage": "https://github.com/sbamboo/mod.fabric.backstage_bluemap",
+		"sources": "https://github.com/sbamboo/mod.fabric.backstage_bluemap"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/backstage_bluemap/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.sbamboo.bsbluemap.BackstageBluemap"
+		],
+		"client": [
+			"github.sbamboo.bsbluemap.BackstageBluemapClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"bluemap": "*"
+	}
+}
